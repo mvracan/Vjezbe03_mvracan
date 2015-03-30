@@ -42,7 +42,14 @@ namespace Vjezbe03_mvracan
             povrsina = polumjer * polumjer * (float)Math.PI;
             opseg = 2 * polumjer * (float)Math.PI;
 
+            txtPolumjer.Text = polumjer.ToString();
+            txtPovrsina.Text = Math.Round(povrsina, 2).ToString();
+            txtOpseg.Text = Math.Round(opseg, 2).ToString();
 
+
+            if (chkSpremi.Checked == true) {
+                lstRezultati.Items.Add(polumjer);
+            }
 
         }
     }
