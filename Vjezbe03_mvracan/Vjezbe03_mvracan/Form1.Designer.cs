@@ -115,6 +115,7 @@
             this.lstRezultati.Size = new System.Drawing.Size(120, 95);
             this.lstRezultati.TabIndex = 7;
             this.lstRezultati.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.lstRezultati.DoubleClick += new System.EventHandler(this.lstRezultati_DoubleClick);
             // 
             // btnIzracunaj
             // 
@@ -134,6 +135,7 @@
             this.btnOcisti.TabIndex = 9;
             this.btnOcisti.Text = "Očisti";
             this.btnOcisti.UseVisualStyleBackColor = true;
+            this.btnOcisti.Click += new System.EventHandler(this.btnOcisti_Click);
             // 
             // FrmGlavna
             // 
